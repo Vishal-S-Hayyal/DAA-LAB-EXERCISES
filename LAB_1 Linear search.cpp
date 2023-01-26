@@ -1,14 +1,14 @@
-Pseudo code for linear search
+/*Pseudo code for linear search
 Start
 procedure linear_search (list,value)
 for each item in the list
 if match item==key
 return match item's location
 end if 
-end for 
+end for*/
 
+/*sample linear search code C++*/
 
-#sample linear search code C++
 #include<iostream>
 using namespace std;
 
