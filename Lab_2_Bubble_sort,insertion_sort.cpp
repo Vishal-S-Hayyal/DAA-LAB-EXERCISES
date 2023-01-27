@@ -12,15 +12,15 @@ while(i>=0&&a[j]>temp)
 #include <iostream>
 using namespace std;
 
-void printArray(int array[], int size) {
-  for (int i = 0; i < size; i++) {
+void printArray(int array[], int n) {
+  for (int i = 0; i < n; i++) {
     cout << array[i] << " ";
   }
   cout << endl;
 }
 
-void insertionSort(int array[], int size) {
-  for (int i= 1; i < size; step++) {
+void insertionSort(int array[], int n) {
+  for (int i= 1; i < n; i++) {
     int key = array[i];
     int j = i - 1;
      while (key < array[j] && j >= 0) {
@@ -33,10 +33,10 @@ void insertionSort(int array[], int size) {
 
 int main() {
   int data[] = {9, 5, 1, 4, 3};
-  int size = sizeof(data) / sizeof(data[0]);
-  insertionSort(data, size);
+  int n = sizeof(data) / sizeof(data[0]);
+  insertionSort(data, n);
   cout << "Sorted array in ascending order:\n";
-  printArray(data, size);
+  printArray(data, n);
 }
 
 /*pseudocode for bubble sort
@@ -59,10 +59,10 @@ void bubbleSort(int arr[], int n)
 				swap(arr[j], arr[j + 1]);
 }
 
-void printArray(int arr[], int size)
+void printArray(int arr[], int n)
 {
 	int i;
-	for (i = 0; i < size; i++)
+	for (i = 0; i < n; i++)
 		cout << arr[i] << " ";
 	cout << endl;
 }
